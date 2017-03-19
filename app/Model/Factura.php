@@ -25,19 +25,19 @@ class Factura extends AppModel {
 	}
 
 	function getCountFacturasVencidas($co_ven){
-		$data = $this->query('SELECT COUNT(*) as count FROM facturas WHERE fec_venc < NOW() && comentario = "" && co_ven in '.'('.$co_ven.')');
+		$data = $this->query('SELECT COUNT(*) as count FROM facturas WHERE fec_venc < NOW() && status = "Sin Procesar" && co_ven in '.'('.$co_ven.')');
 		return $data;
 	}
 
 	function getFacturasVencidas($co_ven , $page , $perPage){
 		$offset = ($page - 1) * $perPage;
-		$data = $this->query('SELECT * , DATEDIFF(NOW() , fec_venc) as diasvencida  FROM facturas f , clientes c   WHERE c.co_cli = f.co_cli AND f.comentario = "" AND f.co_ven in '.'('.$co_ven.') ORDER BY f.fec_venc DESC LIMIT '.$perPage.' OFFSET '.$offset);
+		$data = $this->query('SELECT * , DATEDIFF(NOW() , fec_venc) as diasvencida  FROM facturas f , clientes c   WHERE c.co_cli = f.co_cli AND f.status = "Sin Procesar" AND f.co_ven in '.'('.$co_ven.') ORDER BY f.fec_venc DESC LIMIT '.$perPage.' OFFSET '.$offset);
 		return $data;
 	}
 
 	function getFacturasVencidasCli($co_cli){
 		
-		$data = $this->query('SELECT * , DATEDIFF(NOW() , fec_venc) as diasvencida  FROM facturas  WHERE comentario = "" AND co_cli = "'.$co_cli.'"');
+		$data = $this->query('SELECT * , DATEDIFF(NOW() , fec_venc) as diasvencida  FROM facturas  WHERE status = "Sin Procesar" AND co_cli = "'.$co_cli.'"');
 		return $data;
 	}
 
@@ -49,7 +49,7 @@ class Factura extends AppModel {
 
 	function getFacturasCliPagadas($co_cli){
 		
-		$data = $this->query('SELECT *   FROM facturas  WHERE comentario != "" AND co_cli = "'.$co_cli.'"');
+		$data = $this->query('SELECT *   FROM facturas  WHERE f.status = "Procesados" AND co_cli = "'.$co_cli.'"');
 		return $data;
 	}
 
