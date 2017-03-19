@@ -1,0 +1,434 @@
+/* Top hook CSS */
+#htmlcontent_top ul li {
+  padding-top: 30px; }
+  #htmlcontent_top ul li .bannerBox {
+    position: relative; }
+  #htmlcontent_top ul li h4 {
+    font: 300 26px/30px "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 11px 0 0;
+    color: #333;
+    text-align: center; }
+  #htmlcontent_top ul li img {
+    max-width: 100%;
+    height: auto; }
+  @media only screen and (min-width: 1200px) {
+    #htmlcontent_top ul li a:hover .item-html {
+      opacity: 1; }
+      #htmlcontent_top ul li a:hover .item-html h2 {
+        animation: 0.3s ease-in-out 0s normal none 1 moveFromTop;
+        -webkit-animation: 0.5s ease-in-out 0s normal none 1 moveFromTop; }
+      #htmlcontent_top ul li a:hover .item-html h3 {
+        animation: 0.2s ease-in-out .03s normal none 1 moveFromRight;
+        -webkit-animation: 0.4s ease-in-out .03s normal none 1 moveFromRight; }
+      #htmlcontent_top ul li a:hover .item-html button {
+        animation: 0.2s ease-in-out .03s normal none 1 moveFromBottom;
+        -webkit-animation: 0.4s ease-in-out .03s normal none 1 moveFromBottom; } }
+  #htmlcontent_top ul li .item-html {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(243, 243, 243, 0.9);
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    overflow: hidden; }
+    @media only screen and (min-width: 1200px) {
+      #htmlcontent_top ul li .item-html {
+        opacity: 0; } }
+    #htmlcontent_top ul li .item-html:after {
+      content: " ";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 0; }
+    #htmlcontent_top ul li .item-html > div {
+      display: inline-block;
+      vertical-align: middle; }
+    #htmlcontent_top ul li .item-html h2 {
+      font: 300 37px/1em "Ubuntu", sans-serif;
+      margin: 0 0 8px;
+      padding: 0;
+      color: #333;
+      position: relative; }
+    #htmlcontent_top ul li .item-html h3 {
+      font: 300 53px/1em "Ubuntu", sans-serif;
+      margin: 0 0 11px;
+      padding: 0;
+      color: #23b55c;
+      position: relative; }
+    #htmlcontent_top ul li .item-html button {
+      display: inline-block;
+      position: relative;
+      color: #fff;
+      padding: 11px 19px 15px;
+      border: none;
+      background: #474747;
+      text-transform: uppercase;
+      font: normal 14px/1em "Ubuntu", sans-serif; }
+@media (max-width: 1199px) {
+  #htmlcontent_top ul li .item-html {
+    background: #23b55c; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #htmlcontent_top ul li .item-html {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    opacity: 0.7; }
+    #htmlcontent_top ul li .item-html button {
+      display: none; }
+    #htmlcontent_top ul li .item-html h2, #htmlcontent_top ul li .item-html h3 {
+      color: #fff;
+      font-size: 16px;
+      margin: 2px 0; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  #htmlcontent_top ul li h4 {
+    font: 300 20px/24px "Ubuntu", sans-serif; }
+  #htmlcontent_top ul li .item-html {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    opacity: 0.7; }
+    #htmlcontent_top ul li .item-html button {
+      display: none; }
+    #htmlcontent_top ul li .item-html h2, #htmlcontent_top ul li .item-html h3 {
+      color: #fff;
+      font-size: 14px;
+      margin: 1px 0; } }
+@media (min-width: 400px) and (max-width: 767px) {
+  #htmlcontent_top ul {
+    margin: 0 -5px; }
+    #htmlcontent_top ul li {
+      padding: 20px 5px 0; }
+      #htmlcontent_top ul li h4 {
+        font: 300 14px/20px "Ubuntu", sans-serif; }
+      #htmlcontent_top ul li .item-html {
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        padding: 3px 6px;
+        opacity: 0.7; }
+        #htmlcontent_top ul li .item-html button {
+          display: none; }
+        #htmlcontent_top ul li .item-html h2, #htmlcontent_top ul li .item-html h3 {
+          color: #fff;
+          font-size: 11px;
+          margin: 0; } }
+@media (max-width: 399px) {
+  #htmlcontent_top ul li {
+    width: 100%; }
+    #htmlcontent_top ul li .item-html {
+      left: 0;
+      top: 0;
+      width: auto;
+      height: auto;
+      padding: 5px 10px;
+      opacity: 0.7; }
+      #htmlcontent_top ul li .item-html button {
+        display: none; }
+      #htmlcontent_top ul li .item-html h2, #htmlcontent_top ul li .item-html h3 {
+        color: #fff;
+        font-size: 16px;
+        margin: 2px 0; } }
+
+/* Home hook CSS */
+#htmlcontent_home ul {
+  margin-bottom: 0; }
+  #htmlcontent_home ul li {
+    padding-top: 30px; }
+    #htmlcontent_home ul li .bannerBox {
+      position: relative; }
+    #htmlcontent_home ul li img {
+      max-width: 100%;
+      height: auto; }
+    @media only screen and (min-width: 1200px) {
+      #htmlcontent_home ul li a:hover .item-html:before {
+        opacity: 0;
+        -moz-transition: all 1.2s ease;
+        -o-transition: all 1.2s ease;
+        -webkit-transition: all 1.2s ease;
+        transition: all 1.2s ease; }
+      #htmlcontent_home ul li a:hover .item-html:after {
+        left: 0; }
+      #htmlcontent_home ul li a:hover .item-html h2 {
+        color: #fff; }
+      #htmlcontent_home ul li a:hover .item-html > div > div {
+        animation: 0.3s ease-in-out .03s normal none 1 zoomIn;
+        -webkit-animation: 0.3s ease-in-out .03s normal none 1 zoomIn; } }
+    #htmlcontent_home ul li .item-html {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 71%;
+      text-align: center;
+      padding: 0 5px 0 38px;
+      text-transform: uppercase;
+      overflow: hidden; }
+      #htmlcontent_home ul li .item-html:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url(../../../../img/banner-bg.png) repeat-y;
+        -moz-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+        -webkit-transition: all 0.1s ease;
+        transition: all 0.1s ease;
+        opacity: 1; }
+      #htmlcontent_home ul li .item-html:after {
+        content: " ";
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url(../../../../img/banner-bg-hover.png) repeat-y;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+      #htmlcontent_home ul li .item-html > div {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        width: 100%; }
+        #htmlcontent_home ul li .item-html > div:after {
+          content: " ";
+          display: inline-block;
+          vertical-align: middle;
+          height: 100%;
+          width: 0; }
+        #htmlcontent_home ul li .item-html > div > div {
+          display: inline-block;
+          vertical-align: middle; }
+      #htmlcontent_home ul li .item-html h2 {
+        font: 300 20px/1.4em "Ubuntu", sans-serif;
+        margin: 0 0 15px;
+        padding: 0;
+        color: #333;
+        position: relative; }
+      #htmlcontent_home ul li .item-html h3 {
+        font: 300 15px/1.2em "Ubuntu", sans-serif;
+        margin: 0 0 9px;
+        padding: 0;
+        color: #23b55c;
+        position: relative; }
+      #htmlcontent_home ul li .item-html button {
+        display: inline-block;
+        position: relative;
+        color: #fff;
+        padding: 12px 19px 14px;
+        border: none;
+        background: #23b55c;
+        text-transform: uppercase;
+        font: normal 14px/1em "Ubuntu", sans-serif; }
+@media (min-width: 1200px) and (max-width: 1700px) {
+  #htmlcontent_home ul li .item-html h2 {
+    font: 300 14px/1.4em "Ubuntu", sans-serif;
+    margin: 0 0 10px; }
+  #htmlcontent_home ul li .item-html h3 {
+    font: 300 12px/1.2em "Ubuntu", sans-serif;
+    margin: 0 0 5px; }
+  #htmlcontent_home ul li .item-html button {
+    padding: 10px 14px;
+    font: normal 11px/1em "Ubuntu", sans-serif; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #htmlcontent_home ul li {
+    width: 50%; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  #htmlcontent_home ul li {
+    width: 50%; }
+    #htmlcontent_home ul li .item-html h2 {
+      font: 300 17px/1.4em "Ubuntu", sans-serif;
+      margin: 0 0 10px; }
+    #htmlcontent_home ul li .item-html h3 {
+      font: 300 14px/1.2em "Ubuntu", sans-serif;
+      margin: 0 0 5px; }
+    #htmlcontent_home ul li .item-html button {
+      padding: 10px 14px;
+      font: normal 11px/1em "Ubuntu", sans-serif; } }
+@media (min-width: 480px) and (max-width: 767px) {
+  #htmlcontent_home ul {
+    margin: 0 -5px; }
+    #htmlcontent_home ul li {
+      width: 50%;
+      padding: 5px; }
+      #htmlcontent_home ul li .item-html h2 {
+        font: 300 12px/1.4em "Ubuntu", sans-serif;
+        margin: 0 0 6px; }
+      #htmlcontent_home ul li .item-html h3 {
+        font: 300 10px/1.2em "Ubuntu", sans-serif;
+        margin: 0 0 3px; }
+      #htmlcontent_home ul li .item-html button {
+        padding: 6px 10px;
+        font: normal 10px/1em "Ubuntu", sans-serif; } }
+@media (max-width: 479px) {
+  #htmlcontent_home ul li {
+    width: 100%;
+    padding-top: 15px; }
+    #htmlcontent_home ul li .item-html h2 {
+      font: 300 17px/1.4em "Ubuntu", sans-serif;
+      margin: 0 0 10px; }
+    #htmlcontent_home ul li .item-html h3 {
+      font: 300 14px/1.2em "Ubuntu", sans-serif;
+      margin: 0 0 5px; }
+    #htmlcontent_home ul li .item-html button {
+      padding: 10px 14px;
+      font: normal 11px/1em "Ubuntu", sans-serif; } }
+
+/* Left hook CSS */
+/* Right hook CSS */
+/* Footer hook CSS */
+@-webkit-keyframes moveFromLeft {
+  from {
+    -webkit-transform: translateX(-100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -webkit-transform: translateX(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-moz-keyframes moveFromLeft {
+  from {
+    -moz-transform: translateX(-100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -moz-transform: translateX(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-ms-keyframes moveFromLeft {
+  from {
+    -ms-transform: translateX(-100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -ms-transform: translateX(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-webkit-keyframes moveFromRight {
+  from {
+    -webkit-transform: translateX(100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -webkit-transform: translateX(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-moz-keyframes moveFromRight {
+  from {
+    -moz-transform: translateX(100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -moz-transform: translateX(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-ms-keyframes moveFromRight {
+  from {
+    -ms-transform: translateX(100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -ms-transform: translateX(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-webkit-keyframes moveFromBottom {
+  from {
+    -webkit-transform: translateY(100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -webkit-transform: translateY(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-moz-keyframes moveFromBottom {
+  from {
+    -moz-transform: translateY(100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -moz-transform: translateY(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-ms-keyframes moveFromBottom {
+  from {
+    -ms-transform: translateY(100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -ms-transform: translateY(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-webkit-keyframes moveFromTop {
+  from {
+    -webkit-transform: translateY(-100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -webkit-transform: translateY(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-moz-keyframes moveFromTop {
+  from {
+    -moz-transform: translateY(-100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -moz-transform: translateY(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-ms-keyframes moveFromTop {
+  from {
+    -ms-transform: translateY(-100%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  to {
+    -ms-transform: translateY(0%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3); }
+
+  50% {
+    opacity: 1; } }
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3); }
+
+  50% {
+    opacity: 1; } }

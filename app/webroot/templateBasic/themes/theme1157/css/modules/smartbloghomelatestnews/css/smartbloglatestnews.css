@@ -1,0 +1,108 @@
+.blog-image {
+  margin-bottom: 15px; }
+  .blog-image a {
+    display: block; }
+    @media only screen and (max-width: 767px) {
+      .blog-image a img {
+        width: 100%; } }
+
+#homepage-blog {
+  padding-bottom: 39px; }
+  #homepage-blog .title_block {
+    text-align: center;
+    padding: 53px 0 26px;
+    margin: 0; }
+    #homepage-blog .title_block:after {
+      display: none; }
+  #homepage-blog .blog-image {
+    float: left;
+    margin: 0 27px 0 0; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #homepage-blog .blog-image {
+        max-width: 40%;
+        margin: 0 17px 0 0; } }
+    @media (max-width: 767px) {
+      #homepage-blog .blog-image {
+        max-width: 40%;
+        margin: 0 17px 0 0; } }
+  #homepage-blog li .date-added {
+    margin: 28px 0 14px;
+    padding: 0 9px 0 6px;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 18px;
+    background: url(../../../../img/blog-data.png) no-repeat right top; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #homepage-blog li .date-added {
+        margin: 8px 0 4px; } }
+    @media (max-width: 479px) {
+      #homepage-blog li .date-added {
+        margin: 8px 0 4px; } }
+  #homepage-blog li h5 {
+    font: 300 14px/22px "Ubuntu", sans-serif;
+    margin: 0 0 10px;
+    text-transform: uppercase; }
+    #homepage-blog li h5 a {
+      font: 300 14px/22px "Ubuntu", sans-serif;
+      color: #333; }
+      #homepage-blog li h5 a:hover {
+        color: #23b55c; }
+  #homepage-blog li .post-descr {
+    width: 95%; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #homepage-blog li .post-descr {
+        width: 100%;
+        font-size: 11px;
+        line-height: 16px; } }
+  #homepage-blog li .commentcount {
+    font-size: 10px;
+    line-height: 18px; }
+    #homepage-blog li .commentcount a {
+      color: #23b55c; }
+      #homepage-blog li .commentcount a:hover {
+        color: #000; }
+    #homepage-blog li .commentcount i {
+      margin-right: 7px;
+      color: #888; }
+
+#homepage-blog #homepage-carousel-blog {
+  overflow: hidden;
+  margin: 0; }
+
+#homepage-blog .bx-wrapper {
+  margin: 0 !important;
+  position: relative; }
+
+#homepage-blog .bx-controls a {
+  color: #000; }
+
+#homepage-blog .bx-controls a:hover,
+#homepage-blog .bx-controls a.active {
+  color: #23b55c; }
+
+#homepage-blog .bx-controls a:before {
+  font-family: "FontAwesome"; }
+
+#homepage-blog .bx-controls-direction {
+  float: left;
+  overflow: hidden; }
+
+#homepage-blog .bx-controls-direction a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  margin-top: -20px; }
+  @media only screen and (max-width: 1199px) {
+    #homepage-blog .bx-controls-direction a {
+      display: none; } }
+
+#homepage-blog .bx-controls-direction a.bx-prev {
+  left: -30px; }
+  #homepage-blog .bx-controls-direction a.bx-prev:before {
+    content: '\f104'; }
+
+#homepage-blog .bx-controls-direction a.bx-next {
+  right: -30px; }
+  #homepage-blog .bx-controls-direction a.bx-next:before {
+    content: '\f105'; }

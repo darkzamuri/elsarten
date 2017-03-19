@@ -1,0 +1,28 @@
+.header_user_info {
+  float: right;
+  padding: 5px 0 5px 22px; }
+  @media (max-width: 600px) {
+    .header_user_info {
+      clear: right; } }
+  .header_user_info a {
+    padding: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 18px; }
+    .header_user_info a:hover, .header_user_info a.active {
+      color: #000; }
+  @media (max-width: 600px) {
+    .header_user_info + .header_user_info {
+      clear: none; } }
+
+.user_info {
+  text-align: right;
+  margin: 20px 0 0 0; }
+  .user_info li {
+    display: inline-block;
+    padding-right: 15px; }
+    .user_info li a {
+      text-decoration: none; }
+      .user_info li a:hover {
+        text-decoration: underline; }

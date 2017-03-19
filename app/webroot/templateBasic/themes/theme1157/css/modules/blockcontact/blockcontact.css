@@ -1,0 +1,42 @@
+.shop-phone {
+  float: left;
+  padding: 5px 0;
+  text-transform: uppercase; }
+  .shop-phone i {
+    font-size: 16px;
+    vertical-align: -1px;
+    color: #000; }
+  .shop-phone strong {
+    font-weight: normal;
+    color: #23b55c; }
+
+#contact-link {
+  float: left;
+  padding: 5px 20px 5px 0; }
+  #contact-link a {
+    padding: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 18px;
+    color: #23b55c; }
+    #contact-link a:hover, #contact-link a.active {
+      color: #000; }
+
+@media (max-width: 767px) {
+  #contact_block {
+    margin-bottom: 20px; } }
+#contact_block .label {
+  display: none; }
+#contact_block .block_content {
+  color: #888888; }
+#contact_block p {
+  margin-bottom: 4px; }
+#contact_block p.tel {
+  font: 400 17px/21px "Ubuntu", sans-serif;
+  color: #333333;
+  margin-bottom: 6px; }
+  #contact_block p.tel i {
+    font-size: 25px;
+    vertical-align: -2px;
+    padding-right: 10px; }
