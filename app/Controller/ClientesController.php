@@ -170,7 +170,7 @@ class ClientesController extends AppController {
         
 	}
 
-	public function getClientes($id , $page = 1 , $perPage = 1000 , $query = 'todos') {
+	public function getClientes($id , $page = 1 , $perPage = 20 , $query = 'todos') {
 		$this->autoRender = false;
 		// Allow from any origin
 	    if (isset($_SERVER['HTTP_ORIGIN'])) {
@@ -267,7 +267,7 @@ class ClientesController extends AppController {
 		
 		
 		$codigos = $this->Vendedore->getCoven($id);
-		$data['Clientes'] = $this->Cliente->searchCliente($codigos ,$search);
+		$data['Clientes'] = $this->Cliente->searchCliente($id ,$search);
 		
 		return json_encode(utf8ize($data));	
         

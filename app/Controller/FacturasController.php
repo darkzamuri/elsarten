@@ -227,8 +227,7 @@ class FacturasController extends AppController {
 	    $user = $this->User->find('first' , array('conditions' => array('User.id' => $id))); 
 		$codigos = $user['User']['codigos'];
 		$data = array();
-		$data['total_pages'] = $this->Factura->getCountFacturas($codigos);
-		$data['next_page'] = $page + 1;
+		
 		$data['Facturas'] = $this->Factura->getFacturasVencidas($codigos ,$page , $perPage);
 		
 		return json_encode(utf8ize($data));		
