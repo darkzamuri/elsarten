@@ -266,8 +266,11 @@ class ClientesController extends AppController {
 		
 		
 		
-		$codigos = $this->Vendedore->getCoven($id);
-		$data['Clientes'] = $this->Cliente->searchCliente($id ,$search);
+		$this->User->recursive = 0;
+	    $user = $this->User->find('first' , array('conditions' => array('User.id' => $id))); 
+		$codigos = $user['User']['codigos'];
+		//var_dump($codigos);
+		$data['Clientes'] = $this->Cliente->searchCliente($codigos ,$search);
 		
 		return json_encode(utf8ize($data));	
         
