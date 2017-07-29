@@ -68,7 +68,7 @@ class Cliente extends AppModel {
 
 	function searchCliente($co_ven , $name){
 		
-		$data = $this->query('SELECT id , cli_des , img_url  FROM clientes  WHERE co_ven in '.'('.$co_ven.') AND cli_des LIKE "%'.$name.'%"');
+		$data = $this->query('SELECT id , cli_des , img_url  FROM clientes  WHERE co_ven in '.'('.$co_ven.') AND cli_des LIKE "% UPPER('.strtoupper($name).')%"');
 		return $data;
 	}
 

@@ -53,7 +53,7 @@ class EmailConfig {
 		'port' => 465,
 		'timeout' => 30,
 		'username' => 'manuperazafa@gmail.com',
-		'password' => '?fasito123',
+		'password' => 'aevl175.',
 		'client' => null,
 		'log' => false,
 		//'charset' => 'utf-8',
