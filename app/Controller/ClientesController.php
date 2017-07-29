@@ -239,7 +239,7 @@ class ClientesController extends AppController {
 		return json_encode(utf8ize($data));	
 	}
 
-	public function searchCliente($id , $search) {
+	public function searchCliente($id = null , $search = null) {
 		$this->autoRender = false;
 		
  
