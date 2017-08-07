@@ -276,7 +276,7 @@
                     showPercent : true ,
                     allowedExtensions : 'png|jpg|jpeg',
                     url : 'Articulos/fileUpload',
-                    data : {articulo_id : idArt},
+                    data : {articulo_id : idArt.trim()},
                     onFileSuccess : function(file,data){
                         window.location.reload();
                     }

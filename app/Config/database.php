@@ -71,8 +71,8 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'aevl175.',
-		'database' => 'elsarten',
+		'password' => '12345',
+		'database' => 'elsartenweb',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

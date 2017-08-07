@@ -1,0 +1,2 @@
+INSERT INTO OPENQUERY (PRUEBA322,'SELECT co_ven , ven_des FROM vendedores')
+SELECT co_ven,ven_des FROM elsartenwebdemo.dbo.vendedor;

@@ -1,0 +1,21 @@
+INSERT INTO OPENQUERY (PRUEBA322,'SELECT fact_num , comentario ,fec_emis , fec_venc , co_cli , co_ven , tot_bruto , tot_neto FROM facturas')
+SELECT fact_num , comentario ,fec_emis , fec_venc , co_cli , co_ven , tot_bruto , tot_neto FROM elsartenwebdemo.dbo.factura;
+
+INSERT INTO OPENQUERY (PRUEBA322,'SELECT fact_num , comentario ,fec_emis , fec_venc , co_cli , co_ven , tot_bruto , tot_neto,status FROM facturas')
+select  f.fact_num , f.comentario ,f.fec_emis , f.fec_venc , f.co_cli , f.co_ven , f.tot_bruto , f.tot_neto, fr.status from elsartenwebdemo.dbo.factura f inner join (select fact_num, status, count(*) as cant from elsartenwebdemo.dbo.Fact_reng group by fact_num, status) as fr on fr.fact_num=f.fact_num order by fact_num 
+
+
+
+--------------------------
+
+
+INSERT INTO OPENQUERY (PRUEBA322,'SELECT fact_num , comentario ,fec_emis , fec_venc , co_cli , co_ven , tot_bruto , tot_neto,status FROM facturas')
+select  f.fact_num , f.comentario ,f.fec_emis , f.fec_venc , f.co_cli , f.co_ven , f.tot_bruto , f.tot_neto, fr.status from asarte.dbo.factura f inner join (select fact_num, status, count(*) as cant from elsartenwebdemo.dbo.Fact_reng group by fact_num, status) as fr on fr.fact_num=f.fact_num order by fact_num 
+
+
+SELECT COUNT(*) FROM ASARTE.DBO.factura
+
+SELECT * FROM ASARTE.DBO.factura FA WHERE FA.FACT_NUM NOT IN (select  f.fact_num from asarte.dbo.factura f inner join (select fact_num, status, count(*) as cant from elsartenwebdemo.dbo.Fact_reng group by fact_num, status) as fr on fr.fact_num=f.fact_num) ORDER BY FACT_NUM
+
+
+SELECT  * FROM ASARTE.DBO.Fact_reng WHERE fact_num=12147

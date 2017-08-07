@@ -56,7 +56,7 @@ class Cliente extends AppModel {
 
 	function getClientes($co_ven , $page , $perPage){
 		$offset = ($page - 1) * $perPage;
-		$data = $this->query('SELECT id , cli_des , img_url  FROM clientes  WHERE co_ven in '.'('.$co_ven.') ORDER BY co_ven  LIMIT '.$perPage.' OFFSET '.$offset);
+		$data = $this->query('SELECT id , cli_des , img_url  FROM clientes  WHERE co_ven in '.'('.$co_ven.') ORDER BY cli_des  LIMIT '.$perPage.' OFFSET '.$offset);
 		return $data;
 	}
 
@@ -68,7 +68,7 @@ class Cliente extends AppModel {
 
 	function searchCliente($co_ven , $name){
 		
-		$data = $this->query('SELECT id , cli_des , img_url  FROM clientes  WHERE co_ven in '.'('.$co_ven.') OR UPPER(cli_des) LIKE "% '.strtoupper($name).'%" ORDER BY co_ven LIMIT 20 ');
+		$data = $this->query('SELECT id , cli_des , img_url  FROM clientes  WHERE co_ven in '.'('.$co_ven.') AND UPPER(cli_des) LIKE "%'.strtoupper($name).'%" ORDER BY cli_des LIMIT 20 ');
 		return $data;
 	}
 

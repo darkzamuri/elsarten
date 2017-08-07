@@ -30,8 +30,8 @@
 		<td><?php echo h($lin['Lin']['id']); ?>&nbsp;</td>
 		<td><?php echo h($lin['Lin']['co_lin']); ?>&nbsp;</td>
 		<td><?php echo h($lin['Lin']['lin_des']); ?>&nbsp;</td>
-		<td><?php  $file = $this->webroot.'files/productos/'.$lin['Lin']['co_lin'].'.png';?>
-			<img width="120" height="120" src="<?php echo $file;?>"/>
+		<td><?php  $file = $this->webroot.'files/productos/'.trim($lin['Lin']['co_lin']);?>
+			<img width="120" height="120" src="<?php if(file_exists($file.'.png')){echo $file.'.png';} else {echo $file.'.jpg';}?>"/>
 		</td>
 		<td class="actions">
 			<a href="#myModal" id="art" role="button" class="btn modal1 btn-large btn-primary" data-toggle="modal" data-id="<?php echo $lin['Lin']['co_lin']; ?>">Subir foto</a>
